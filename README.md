@@ -50,7 +50,7 @@ It is possible to show\hide the issue parent from the filter section.
 
 1. Move to plugins folder.
 <pre>
-git clone https://github.com/happy-se-life/kanban.git
+git clone --branch redmine-4 https://github.com/devin50s/kanban.git
 </pre>
 
 2. Edit app/models/constants.rb for your environment.
