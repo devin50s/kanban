@@ -65,15 +65,21 @@ class Constants < ActiveRecord::Base
 
   # Default High Priority issue id
   # Default is 3 to back compatibility
-  # All issues >= DEFAULT_HIGH_ PRIORITY_ISSUE_ID will be seen as high priority issues
+  # All issues == DEFAULT_HIGH_ PRIORITY_ISSUE_ID or != DEFAULT_NORMAL_PRIORITY_ISSUE_ID or != DEFAULT_LOW_PRIORITY_ISSUE_ID will be seen as high priority issues
   DEFAULT_HIGH_PRIORITY_ISSUE_ID = 3
 
   # Default Normal Priority issue id
   # Default is 2 to back compatibility
-  # All issues == DEFAULT_HIGH_ DEFAULT_NORMAL_PRIORITY_ISSUE_ID will be seen as normal priority issues
+  # All issues == DEFAULT_NORMAL_PRIORITY_ISSUE_ID will be seen as normal priority issues
   DEFAULT_NORMAL_PRIORITY_ISSUE_ID = 2
+
+  # Default Low Priority issue id
+  # Default is 1 to back compatibility
+  # All issues == DEFAULT_LOW_PRIORITY_ISSUE_ID will be seen as low priority issues
+  DEFAULT_LOW_PRIORITY_ISSUE_ID = 4
+
   # Default Show ancestors
   # 0: Not display
   # 1: Display
-  DEFAULT_SHOW_ANCESTORS = "1"  
+  DEFAULT_SHOW_ANCESTORS = "1"
 end
